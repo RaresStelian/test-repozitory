@@ -5,6 +5,7 @@ describe('Login Page', () => {
     browser.url('/')
     browser.setValue('input[name="username"]', 'test@test.com')
     browser.setValue('input[name="password"]', 'test')
+    browser.pause(3000) // = 3 sec
     // browser.submitForm('form[class="form-signin"]')
     browser.click('button[class="btn btn-lg btn-primary btn-block"]')
     // let logoutBtn = $('button[class="btn btn-primary"]');
